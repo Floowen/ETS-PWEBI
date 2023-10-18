@@ -7,21 +7,21 @@
     </head>
     <body>
         <div class="hero">
-            <div class="container">
+            <div class="container py-4">
                 <div class="row">
                     <div class="col-sm py-2">
                         <div class="card shadow">
                             <div class="card-body">
-                                <h5 class="card-title">Title</h5>
-                                <p class="card-text">Card Body Text</p>
+                                <h5 class="card-title px-3 pt-3 pb-1 fw-bolder" id="title0">Title</h5>
+                                <p class="card-text px-3 pb-3 fw-medium" id="text0">Card Body Text</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm py-2">
                         <div class="card shadow">
                             <div class="card-body">
-                                <h5 class="card-title">Title</h5>
-                                <p class="card-text">Card Body Text</p>
+                                <h5 class="card-title px-3 pt-3 pb-1 fw-bolder" id="title1">Title</h5>
+                                <p class="card-text px-3 pb-3 fw-medium" id="text1">Card Body Text</p>
                             </div>
                         </div>
                     </div>
@@ -30,34 +30,16 @@
                     <div class="col-sm py-2">
                         <div class="card shadow">
                             <div class="card-body">
-                                <h5 class="card-title">Title</h5>
-                                <p class="card-text">Card Body Text</p>
+                                <h5 class="card-title px-3 pt-3 pb-1 fw-bolder" id="title2">Title</h5>
+                                <p class="card-text px-3 pb-3 fw-medium" id="text2">Card Body Text</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm py-2">
                         <div class="card shadow">
                             <div class="card-body">
-                                <h5 class="card-title">Title</h5>
-                                <p class="card-text">Card Body Text</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm py-2">
-                        <div class="card shadow">
-                            <div class="card-body">
-                                <h5 class="card-title">Title</h5>
-                                <p class="card-text">Card Body Text</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm py-2">
-                        <div class="card shadow">
-                            <div class="card-body">
-                                <h5 class="card-title">Title</h5>
-                                <p class="card-text">Card Body Text</p>
+                                <h5 class="card-title px-3 pt-3 pb-1 fw-bolder" id="title3">Title</h5>
+                                <p class="card-text px-3 pb-3 fw-medium" id="text3">Card Body Text</p>
                             </div>
                         </div>
                     </div>
@@ -66,23 +48,83 @@
                     <div class="col-sm py-2">
                         <div class="card shadow">
                             <div class="card-body">
-                                <h5 class="card-title">Title</h5>
-                                <p class="card-text">Card Body Text</p>
+                                <h5 class="card-title px-3 pt-3 pb-1 fw-bolder" id="title4">Title</h5>
+                                <p class="card-text px-3 pb-3 fw-medium" id="text4">Card Body Text</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm py-2">
                         <div class="card shadow">
                             <div class="card-body">
-                                <h5 class="card-title">Title</h5>
-                                <p class="card-text">Card Body Text</p>
+                                <h5 class="card-title px-3 pt-3 pb-1 fw-bolder" id="title5">Title</h5>
+                                <p class="card-text px-3 pb-3 fw-medium" id="text5">Card Body Text</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm py-2">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h5 class="card-title px-3 pt-3 pb-1 fw-bolder" id="title6">Title</h5>
+                                <p class="card-text px-3 pb-3 fw-medium" id="text6">Card Body Text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm py-2">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h5 class="card-title px-3 pt-3 pb-1 fw-bolder" id="title7">Title</h5>
+                                <p class="card-text px-3 pb-3 fw-medium" id="text7">Card Body Text</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm py-2">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h5 class="card-title px-3 pt-3 pb-1 fw-bolder" id="title8">Title</h5>
+                                <p class="card-text px-3 pb-3 fw-medium" id="text8">Card Body Text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm py-2">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h5 class="card-title px-3 pt-3 pb-1 fw-bolder" id="title9">Title</h5>
+                                <p class="card-text px-3 pb-3 fw-medium" id="text9">Card Body Text</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-        
+        <script>
+            if (document.readyState !== 'loading') { 
+                setTimeout(loadXMLDoc, 0); 
+            } else { 
+                document.addEventListener('DOMContentLoaded', loadXMLDoc) 
+            }
+
+            function loadXMLDoc() {
+                var xhttp = new XMLHttpRequest();
+
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                    // console.log(this.responseText);
+                    var data = JSON.parse(this.responseText);
+                    // console.log(data[0].Title);
+                    // document.getElementById("title01").innerHTML = data[0].Title;
+                    for (let i = 0; i < data.length; i++){
+                        document.getElementById("title" + i).innerHTML = data[i].Title;
+                        document.getElementById("text" + i).innerHTML = data[i].Plot;
+                    }
+                    }
+              };
+              xhttp.open("GET", 'https://it-its.id/api/movies', true);
+              xhttp.send();
+            }
+            </script>
     </body>
 </html>
